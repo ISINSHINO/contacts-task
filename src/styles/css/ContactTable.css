@@ -1,0 +1,46 @@
+body {
+    white-space: pre-line;
+}
+
+.MuiPagination-ul li:first-child button,
+.MuiPagination-ul li:last-child button {
+    border: none ;
+}
+
+.arrow-container {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: #2aa2ff;
+}
+
+.table__location {
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word ;
+}
+
+.table__copy-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.table__copy-cell:last-child {
+    align-items: normal;
+}
+
+.css-1ex1afd-MuiTableCell-root:nth-child(2) {
+    color: #2aa2ff;
+}
+
+/*.css-1bptiuh-MuiSvgIcon-root {*/
+/*    color: #2aa2ff !important;*/
+/*}*/
+
+/*.css-1bptiuh-MuiSvgIcon-root:hover{*/
+/*    color: #1976d2 !important;*/
+/*}*/

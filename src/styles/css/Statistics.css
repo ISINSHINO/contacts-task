@@ -1,0 +1,57 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.statistics-section {
+    margin-bottom: 30px;
+}
+
+.statistics-section__title {
+    padding-top: 15px;
+}
+
+.statistic-table__title,
+.nationalities-section__title {
+    color: gray;
+    font-size: 14px;
+}
+
+.statistic-table__info{
+    font-size: 24px;
+}
+
+.statistic-table td {
+    padding: 10px 10px 5px 0;
+}
+
+.statistic-table tr:first-child td {
+    padding-top: 0;
+}
+
+.statistic-table__winner {
+    font-size: 14px;
+    background-color: orange;
+}
+
+.statistic-table tr:nth-child(3) td:nth-child(2) {
+    padding: 0;
+    margin: 0;
+}
+
+.nationalities-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 10px;
+    padding-bottom: 50px;
+}
+
+.nationalities-section__nationality {
+    margin: 0;
+    font-size: 14px;
+}
+
+@media(max-width: 724px) {
+    .nationalities-section__nationality {
+        font-size: 12px;
+    }
+}

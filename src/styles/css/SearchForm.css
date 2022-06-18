@@ -1,0 +1,136 @@
+.header_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_section button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
+
+.header_section__refresh,
+.header_section__squares,
+.header_section__list {
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.header_section__refresh {
+    border: 1px dashed lightgray;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.header_section__refresh:hover {
+    background: #2aa2ff;
+}
+
+.header_section__squares,
+.header_section__list {
+    border: 1px solid lightgray;
+}
+
+.header_section__active {
+    background: #2aa2ff;
+}
+
+.search_section {
+    display: flex !important;
+    justify-content: space-between;
+    padding: 15px;
+    gap: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+    align-items: center;
+}
+
+.search_section__left {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    width: 90%;
+}
+
+.search_section__right {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+.search_section {
+    border-radius: 0;
+}
+
+.search_section__name {
+    min-width: 200px;
+    width: 40%;
+
+}
+
+.search_section__gender {
+    min-width: 200px;
+    width: 25%;
+}
+
+.search_section__nationality {
+    min-width: 200px;
+    width: 30%;
+}
+
+.search_section__clear {
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.search_section__clear:hover{
+    transition: color 0.5s;
+    color: rgba(0, 0, 0, 1);
+}
+
+.search_section__button {
+    opacity: 0.6;
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .header_section__title {
+        font-size: 28px;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .search_section__left {
+        flex-direction: column;
+    }
+    .search_section__name {
+        min-width: 200px;
+        width: 100%;
+    }
+    .search_section__gender {
+        min-width: 200px;
+        width: 100%;
+    }
+
+    .search_section__nationality {
+        min-width: 200px;
+        width: 100%;
+    }
+
+    .search_section__button {
+        width: 35px;
+        height: 35px;
+        opacity: 0.4;
+    }
+
+    .search_section__right {
+        flex-direction: column;
+    }
+}
