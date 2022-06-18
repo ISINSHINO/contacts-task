@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Тестовое задание: Контакты
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![screencapture-inkubator-ks-ua-testing-react-redux-contacts-2020-11-01-10_22_45](https://user-images.githubusercontent.com/18241825/174438292-34563f1f-99cf-45a2-96ad-af750feedf98.png)
 
-## Available Scripts
+1. Данные доступны с сервера [https://randomuser.me/api/?results=200](https://randomuser.me/api/?results=100)
 
-In the project directory, you can run:
+Отображение данных в виде таблицы.
+Колонки ряда таблицы:
 
-### `npm start`
+- Avatar
+- Fullname
+- Birthday (формат - День недели, mm/dd/yyyy, hh:mm am, кол-во лет)
+- Email (должен быть кликабельным с возможностью скопировать)
+- Phone (должен быть кликабельным с возможностью скопировать)
+- Location (Страна, Город)
+- Национальность
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Должна быть возможность переключения режима просмотра данных:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- табличный вид
+- плиточный вид
 
-### `npm test`
+Выбранное значение должно запоминаться в localStorage и в состоянии приложения.
+При обновление страницы илперемонтировании компонента, данные должны
+отобразиться в том виде, который выбрал пользователь. Если страница посещается
+впервые, то использовать по-умолчанию табличный вид
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Должна быть возможность фильтровать данные:
 
-### `npm run build`
+- по полному имени;
+- по половому признаку;
+- по национальности;
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Фильтрация должна происходить без ручной отправки формы.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Очистка фильтра возвращает коллекцию к изначальному состоянию.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Фильтровать нужно всю коллекцию, а не только ту часть которая сейчас в таблице
+отображается.
 
-### `npm run eject`
+4. Вывести пагинацию
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- по 10 пользователей на странице
+- кол-во страниц зависит от кол-во учитывая фильтр
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Должна быть возможность сортировать данные по полному имени в трех состояниях:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- отAдоZ
+- отZдоA
+- изначальный порядок
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Сортировать нужно всю коллекцию, а не только ту часть которая сейчас в таблице
+отображается
 
-## Learn More
+6. Под таблицей необходимо вывести статистику по данным
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- размер коллекции
+- кол-во мужчин, женщин и неопределившихся
+- вывести кого больше
+- кол-во контактов по каждой национальности
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+7. Должна быть возможность обновить данные по клику на кнопку без перезагрузки
+страницы
