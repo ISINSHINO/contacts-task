@@ -1,7 +1,6 @@
 # Тестовое задание: Контакты
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4ef98477-1a45-4014-9abc-510f2c2530e0/screencapture-inkubator-ks-ua-testing-react-redux-contacts-2020-11-01-10_22_45.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4ef98477-1a45-4014-9abc-510f2c2530e0/screencapture-inkubator-ks-ua-testing-react-redux-contacts-2020-11-01-10_22_45.png)
-
+[![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4ef98477-1a45-4014-9abc-510f2c2530e0/screencapture-inkubator-ks-ua-testing-react-redux-contacts-2020-11-01-10_22_45.png]](https://www.notion.so/69021e4ffe134714a110d7b1ab66c10d#4de457fb238b4711a3ca699b3db7c721)
 1. Данные доступны с сервера [https://randomuser.me/api/?results=200](https://randomuser.me/api/?results=100)
 
 Отображение данных в виде таблицы.
